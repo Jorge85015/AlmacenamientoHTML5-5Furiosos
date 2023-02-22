@@ -1,32 +1,84 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>Almacenamiento_Html5_Audio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="audios.js"></script>
-    </head>
-    <body>
-        <section id="reproductor">
-            <audio id="miaudio">
-                <source src="audio/moonlight.mp3">
-            </audio>
-            <nav>
-                <div id="botones">
-                    <button type="button" id="play"></button> 
-                </div>
-                <div id="barra">
-                    <div id="progreso"></div>
-                </div>
-            </nav>
-        
-        </section>
-        <div></div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi podcast</title>
+    <style>
+      /* Estilos para el reproductor de audio */
+      #audio-player {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #audio-player audio {
+        margin-top: 20px;
+      }
+
+      #audio-player .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      #audio-player .controls button {
+        background-color: #333;
+        border: none;
+        color: #fff;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      #audio-player .controls button:hover {
+        background-color: #555;
+      }
+
+      #audio-player .controls input[type="range"] {
+        width: 300px;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mi podcast</h1>
+    <p>¡Bienvenidos al podcast de los 5 furiosos! Aquí encontrarás discusiones interesantes sobre tecnología y cultura.</p>
+    <h2>¿Qué es un podcast?</h2>
+    <p>Un podcast es un programa de radio digital que se puede escuchar en línea o descargar para escuchar en cualquier momento. Los podcasts son una forma popular de consumir contenido en línea, ya que se pueden escuchar mientras se hace cualquier otra cosa, como conducir, trabajar, hacer ejercicio o simplemente relajarse.</p>
+    <div id="audio-player">
+      <audio id="audio" src="audio/podcast.mp3"></audio>
+      <div class="controls">
+        <button id="play-button">Play</button>
+        <button id="pause-button">Pause</button>
+        <input
+          type="range"
+          id="volume-range"
+          min="0"
+          max="1"
+          step="0.1"
+          value="1"
+        />
+      </div>
+    </div>
+    <script>
+      const audio = document.querySelector("#audio");
+      const playButton = document.querySelector("#play-button");
+      const pauseButton = document.querySelector("#pause-button");
+      const volumeRange = document.querySelector("#volume-range");
+
+      playButton.addEventListener("click", () => {
+        audio.play();
+      });
+
+      pauseButton.addEventListener("click", () => {
+        audio.pause();
+      });
+
+      volumeRange.addEventListener("input", () => {
+        audio.volume = volumeRange.value;
+      });
+    </script>
+  </body>
 </html>
