@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 let miaudio, reproducir, progreso, maximo;
-maximo=360;
+maximo=400;
 function comenzar(){
    miaudio=document.getElementById("miaudio");
    reproducir=document.getElementById("play");
