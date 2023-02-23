@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 let miaudio, reproducir, progreso, maximo;
+<<<<<<< HEAD
 maximo = 360;
 function comenzar() {
     miaudio = document.getElementById("miaudio");
@@ -13,6 +14,17 @@ function comenzar() {
 
     reproducir.addEventListener("click", clickando, false);
     barra.addEventListener("click", adelantando, false);
+=======
+maximo=400;
+function comenzar(){
+   miaudio=document.getElementById("miaudio");
+   reproducir=document.getElementById("play");
+   barra=document.getElementById("barra");
+   progreso=document.getElementById("progreso");
+   
+    reproducir.addEventListener("click",clickando,false);
+    barra.addEventListener("click",adelantando,false);
+>>>>>>> origin/veronikaEsparragoza
 }
 
 function clickando() {
