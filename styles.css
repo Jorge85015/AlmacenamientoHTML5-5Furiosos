@@ -11,9 +11,9 @@ and open the template in the editor.
 #play{
     width:50px;
     margin:20px auto;
-    background: #FC3;
+    background: rgb(42, 106, 25);
     padding: 5px;
-    border:2px solid #F60;  
+    border:2px solid rgb(114, 126, 86);  
 }
 
 nav{
@@ -22,8 +22,8 @@ nav{
 }
 #botones{
     float: left;
-    width:200px;
-    height:200px;
+    width:220px;
+    height:220px;
 }
 #barra{
     background:#FFF;
