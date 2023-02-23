@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 let miaudio, reproducir, progreso, maximo;
-maximo = 530;
+maximo = 360;
 function comenzar() {
     miaudio = document.getElementById("miaudio");
     reproducir = document.getElementById("play");
@@ -47,8 +47,4 @@ function adelantando(posicion) {
         progreso.style.width = ratonX + "px";
     }
 }
-<<<<<<< HEAD
 window.addEventListener("load", comenzar, false);
-=======
-window.addEventListener("load",comenzar,false);
->>>>>>> origin/juanjoCobo
