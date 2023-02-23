@@ -47,4 +47,8 @@ function adelantando(posicion) {
         progreso.style.width = ratonX + "px";
     }
 }
+<<<<<<< HEAD
 window.addEventListener("load", comenzar, false);
+=======
+window.addEventListener("load",comenzar,false);
+>>>>>>> origin/juanjoCobo
