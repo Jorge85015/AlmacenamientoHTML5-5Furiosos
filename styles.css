@@ -1,44 +1,45 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : May 9, 2020, 12:55:06 PM
-    Author     : ljavier
-*/
 @charset "utf-8";
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(200, 241, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 #play{
     width:50px;
-    margin:20px auto;
-    background: #FC3;
-    padding: 5px;
-    border:2px solid #F60;  
+    background: rgb(136 214 241);
+    height: 33px;
+    border: 2px solid rgb(0 0 150);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 nav{
- margin: 10px 0;   
-    
+    display: flex;
+    gap: 20px;
 }
-#botones{
-    float: left;
-    width:200px;
-    height:200px;
-}
+
 #barra{
     background:#FFF;
     width:400px;
-    height: 16px;
+    height: 25px;
     border: 1px solid #666;
     padding: 3px;
-    margin-left:100px;
-    
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px; 
 }
+
 #progreso{
    position:absolute;
    width: 0px;
-   height: 16px;
+   height: 25px;
    background: rgba(0,0,150,2);
-    
+   border-bottom-right-radius: 10px;
+   border-top-left-radius: 10px;    
 }
-
