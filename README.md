@@ -10,3 +10,7 @@ Esta línea se ha modificado para la rama de davidMontenegro.
 Esta línea se ha hecho desde la rama de VeronikaEspa
 
 # almacenamientoHTML5-5Furiosos
+
+# almacenamientoHTML5-5Furiosos
+
+Linea agregada por Jorge Quiñonez desde su rama
